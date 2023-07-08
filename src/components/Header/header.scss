@@ -1,0 +1,23 @@
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.81rem;
+    .nav-menu {
+        display: flex;
+        gap: 3.56rem;
+        list-style: none;
+
+        .nav-link {
+        font-size: 1.5rem;
+        text-align: right;
+        color: #FF6060;
+        text-decoration: none;
+        }
+
+        .active {
+            text-decoration: underline;
+        }
+    }
+}

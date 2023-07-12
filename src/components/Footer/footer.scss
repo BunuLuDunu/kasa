@@ -11,13 +11,11 @@ footer {
     padding: 4.12rem 0 1.81rem 0;
 
     p {
-        color: white;
+        color: #FFF;
         margin-top: 1.78rem;
     }
-}
 
-@media screen and (max-device-width: 768px) {
-    .footer-wrapper {
+    @media screen and (max-device-width: 768px) {
         padding-bottom: 3.62rem;
 
         p {

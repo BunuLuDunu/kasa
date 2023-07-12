@@ -9,6 +9,7 @@
     .header-logo {
         display: block;
         flex-shrink: 1;
+        cursor: default;
 
         img {
             max-width: 100%;
@@ -30,6 +31,7 @@
 
         .active {
             text-decoration: underline;
+            cursor: default;
         }
     }
 }

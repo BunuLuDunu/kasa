@@ -1,0 +1,42 @@
+.error-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FF6060;
+    gap: 8.69rem;
+    text-align: center;
+
+    h1 {
+        font-size: 18rem;
+        margin-top: 7.438rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 2.25rem;
+    }
+
+    a {
+        font-size: 1.125rem;
+        margin-bottom: 8.69rem;
+    }
+
+    @media screen and (max-device-width: 768px) {
+        gap: 7.06rem;
+        
+        h1 {
+            font-size: 6rem;
+            margin-top: 5.813rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        a {
+            font-size: 0.875rem;
+            margin-bottom: 7.06rem;
+        }
+    }
+}
+

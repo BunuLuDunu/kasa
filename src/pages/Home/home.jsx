@@ -1,13 +1,13 @@
-import Banner from '../../assets/img/home-banner.png'
+import Banner from '../../components/Banner/banner.jsx'
+import HomeBanner from '../../assets/img/home-banner.png'
 import '../Home/home.scss'
 
 function Home() {
+    const img = {src: HomeBanner, alt: "Vagues s'échouant sur des côtes rocheuses en bord de forêt"};
+
     return (
         <main className='home-container'>
-           <section className="home-banner">
-                <img src={Banner} alt="Vagues s'échouant sur des côtes rocheuses en bord de forêt" />
-                <h1>Chez vous, partout et ailleurs</h1>
-            </section>
+            <Banner img={img} title="Chez vous, partout et ailleurs" />
 
             <section className='housings'>
                 <ul>

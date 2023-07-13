@@ -1,0 +1,31 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 6.25rem;
+
+    .about-banner {
+        position: relative;
+        border-radius: 1.56rem;
+        z-index: 1;
+        width: 100%;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-color: rgba(#000, 0.3);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,11 +1,39 @@
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: 6.25rem;
+    margin-inline: clamp(1.22rem, 6vw, 6.25rem);
+}
 
-    .housings {
+.housings {
+    margin-block: 2.69rem 3.12rem;
+
+    .housing-cards {
         background-color: #F6F6F6;
         border-radius: 1.56rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3.75rem;
+        row-gap: 3.12rem;
+        padding: 3.5rem 3.12rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .housings {
+        .housing-cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .housings {
+        margin-block: 1.38rem 1.69rem;
+    
+        .housing-cards {
+            grid-template-columns: 1fr;
+            row-gap: 1.25rem;
+            column-gap: 0;
+            padding: 0;
+            background-color: none;
+        }
     }
 }

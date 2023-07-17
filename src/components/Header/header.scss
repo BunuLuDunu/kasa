@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 2.81rem 6.25rem;
+    margin: 2.81rem clamp(1.22rem, 6vw, 6.25rem);
     gap: 2.625rem;
 
     .header-logo {
@@ -36,9 +36,9 @@
     }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 767px) {
     .header-wrapper {
-        margin: 1.25rem;
+        margin-block: 1.25rem;
 
         .nav-menu {
             gap: 1.62rem;

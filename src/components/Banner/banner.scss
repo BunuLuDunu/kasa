@@ -1,3 +1,5 @@
+@import "../../assets/colors.scss";
+
 .banner {
     display: flex;
     align-items: center;
@@ -31,7 +33,7 @@
 
 h1 {
     font-size: 3rem;
-    color: #FFF;
+    color: $white;
     text-align: center;
 
 }

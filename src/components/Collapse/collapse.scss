@@ -1,0 +1,55 @@
+@import "../../assets/colors.scss";
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 1.88rem;
+    }
+
+    &-bar {
+        padding: 0.62rem 0.94rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $coral;
+        border-radius: 0.31rem;
+    }
+
+    &-title {
+        color: $white;
+        font-size: 1.5rem;
+    }
+
+    &-arrow {
+        transition: 0.5s ease-out;
+        [aria-expanded=true] & {
+            transform: rotate(-180deg);
+        }
+    }
+    
+    &-wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    
+        [aria-expanded=true] + & {
+            grid-template-rows: 1fr;
+        }   
+    }
+    
+    &-inner {
+        overflow: hidden;
+        background-color: $gray;
+        color: $coral;
+        border-radius: 0.31rem;
+        font-size: 1.125rem;
+        line-height: 1.6rem;
+    }
+
+    &-content {
+        padding: 1.25rem;
+    }
+}

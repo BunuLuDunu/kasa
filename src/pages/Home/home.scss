@@ -1,3 +1,5 @@
+@import "../../assets/colors.scss";
+
 .home-container {
     margin-inline: clamp(1.22rem, 6vw, 6.25rem);
 }
@@ -6,7 +8,7 @@
     margin-block: 2.69rem 3.12rem;
 
     .housing-cards {
-        background-color: #F6F6F6;
+        background-color: $gray;
         border-radius: 1.56rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

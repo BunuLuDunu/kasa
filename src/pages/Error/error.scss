@@ -1,8 +1,10 @@
+@import "../../assets/colors.scss";
+
 .error-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #FF6060;
+    color: $coral;
     gap: 8.69rem;
     text-align: center;
 

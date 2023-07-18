@@ -1,5 +1,7 @@
+@import "../../assets/colors.scss";
+
 footer {
-    background-color: black;
+    background-color: $black;
     margin-top: auto;
 }
 
@@ -11,7 +13,7 @@ footer {
     padding: 4.12rem 0 1.81rem 0;
 
     p {
-        color: #FFF;
+        color: $white;
         margin-top: 1.78rem;
     }
 

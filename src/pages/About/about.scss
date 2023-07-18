@@ -2,30 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-inline: 6.25rem;
+    margin-inline: clamp(1.19rem, 6vw, 6.25rem);
 
-    .about-banner {
-        position: relative;
-        border-radius: 1.56rem;
-        z-index: 1;
-        width: 100%;
-        overflow: hidden;
+    .about-collapse {
+        margin: 2.38rem 6.78rem;
 
-        &::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-            background-color: rgba(#000, 0.3);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-container {
+
+        .banner {
+            aspect-ratio: 21/13.9;
         }
 
-        img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-            object-fit: cover;
+        .about-collapse {
+            margin: 1.19rem 0;
         }
     }
 }

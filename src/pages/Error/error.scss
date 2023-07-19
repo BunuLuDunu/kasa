@@ -1,3 +1,4 @@
+// Importation des variables de couleur
 @import "../../assets/colors.scss";
 
 .error-wrapper {
@@ -8,7 +9,7 @@
     gap: 8.69rem;
     text-align: center;
 
-    h1 {
+    &-title {
         font-size: 18rem;
         margin-top: 7.438rem;
         font-weight: 700;
@@ -23,6 +24,7 @@
         margin-bottom: 8.69rem;
     }
 
+    // Media queries
     @media screen and (max-width: 767px) {
         gap: 7.06rem;
         

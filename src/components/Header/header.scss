@@ -1,3 +1,6 @@
+// Importation des variables de couleur
+@import '../../assets/colors.scss';
+
 .header-wrapper {
     display: flex;
     flex-direction: row;
@@ -24,7 +27,7 @@
         .nav-link {
             font-size: 1.5rem;
             text-align: right;
-            color: #FF6060;
+            color: $coral;
             text-decoration: none;
             white-space: nowrap;
             }
@@ -36,6 +39,7 @@
     }
 }
 
+// Media queries
 @media screen and (max-width: 767px) {
     .header-wrapper {
         margin-block: 1.25rem;

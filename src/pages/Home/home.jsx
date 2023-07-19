@@ -5,8 +5,10 @@ import { useEffect, useState } from 'react';
 import Card from '../../components/Card/card.jsx'
 
 function Home() {
+    // Importation de l'image de bannière de la page Home
     const img = {src: HomeBanner, alt: "Vagues s'échouant sur des côtes rocheuses en bord de forêt"};
 
+    // Fetch pour récupérer les datas sur les logements disponibles dans le fichier json
     const [data, setData] = useState([]);
     const getData = () => {
         fetch('/housings.json'

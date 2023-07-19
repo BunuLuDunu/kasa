@@ -1,9 +1,11 @@
+// Importation des variables de couleurs
 @import "../../assets/colors.scss";
 
 .collapse {
     display: flex;
     flex-direction: column;
 
+    // Ajout d'une marge sauf pour le dernier enfant
     &:not(:last-child) {
         margin-bottom: 1.88rem;
     }
@@ -23,6 +25,7 @@
         font-size: 1.5rem;
     }
 
+    // Animation de la flèche tournant vers la gauche à l'ouverture du collapse
     &-arrow {
         transition: 0.5s ease-out;
         [aria-expanded=true] & {

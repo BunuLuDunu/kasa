@@ -1,6 +1,7 @@
+// Importation des variables de couleur
 @import "../../assets/colors.scss";
 
-article {
+.card {
     display: flex;
     position: relative;
     aspect-ratio: 21.3/21.3;
@@ -8,6 +9,7 @@ article {
     width: 100%;
     border-radius: 0.63rem;
 
+    // Ajout d'un pseudo-élément pour le filtre noir
     &::after {
         content: "";
         position: absolute;
@@ -37,7 +39,7 @@ article {
 }
 
 @media screen and (max-width: 767px) {
-    article {
+    .card {
         aspect-ratio: 20.9/15.9;
     }
 }

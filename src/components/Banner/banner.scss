@@ -1,3 +1,4 @@
+// Importation des variables de couleur
 @import "../../assets/colors.scss";
 
 .banner {
@@ -29,24 +30,25 @@
         border-radius: inherit;
         object-fit: cover;
     }
+
+    h1 {
+        font-size: 3rem;
+        color: $white;
+        text-align: center;
+    
+    }
 }
 
-h1 {
-    font-size: 3rem;
-    color: $white;
-    text-align: center;
-
-}
-
+// Media queries
 @media screen and (max-width: 767px) {
     .banner {
         aspect-ratio: 20.9/6.94;
         padding: 2rem 1rem;
         justify-content: flex-start;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-        text-align: left;
+    
+        h1 {
+            font-size: 1.5rem;
+            text-align: left;
+        }
     }
 }

@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import '../Housing/housing.scss';
 import { useEffect, useState } from "react";
 import Error404 from '../Error/error.jsx';
+import Carousel from "../../components/Carousel/carousel.jsx";
 
 function Housing() {
     // Fetch pour récupérer les datas sur les logements disponibles dans le fichier json
@@ -30,7 +31,8 @@ function Housing() {
     if (error) return (<Error404 />);
 
     return(
-        <div>
+        <div className="housing-container">
+            <Carousel pictures={housing.pictures}/>
             <h1>{housing.title}</h1>
         </div>
     )

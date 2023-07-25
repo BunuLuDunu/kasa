@@ -6,6 +6,7 @@ import './index.scss';
 import Home from './pages/Home/home.jsx';
 import About from './pages/About/about.jsx';
 import Error from './pages/Error/error.jsx';
+import Housing from './pages/Housing/housing.jsx';
 import Header from './components/Header/header.jsx';
 import Footer from './components/Footer/footer.jsx';
 
@@ -19,6 +20,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/housing/:id" element={<Housing />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

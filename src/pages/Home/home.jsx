@@ -41,7 +41,10 @@ function Home() {
             <section className='housings'>
                 <ul className='housing-cards'>
                     {
-                        data && data.length>0 && data.map((housing)=><li key={housing.id}><Card {...housing} key={housing.id} /></li>)
+                        data && data.length>0 && data.map((housing)=>
+                        <li key={housing.id}>
+                            <Card {...housing}/>
+                        </li>)
                     }
                 </ul>
             </section>

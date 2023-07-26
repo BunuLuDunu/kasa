@@ -38,3 +38,20 @@
         text-align: center;
     }
 }
+
+// Media queries
+@media screen and (max-width: 767px) {
+    .carousel {
+        aspect-ratio: 20.9/15.9;
+        padding: 0.36rem;
+
+        .left-arrow, .right-arrow {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        &-counter {
+            display: none;
+        }
+    }
+}

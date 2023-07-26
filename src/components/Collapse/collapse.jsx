@@ -23,7 +23,7 @@ function Collapse({title, description}) {
             <div className="collapse-wrapper">
                 <div className="collapse-inner">
                     <div className="collapse-content">
-                        <p>{description}</p>
+                        {description}
                     </div>
                 </div>
             </div>

@@ -1,3 +1,74 @@
+// Importation des variables de couleur
+@import "../../assets/colors.scss";
+
 .housing-container {
     margin-inline: clamp(1.22rem, 6vw, 6.25rem);
+}
+
+.housing-info {
+    margin-top: 1.87rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+
+    .housing-title {
+        color: $coral;
+        font-size: 2.25rem;
+        line-height: 142.6%;
+    }
+
+    .host-info {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+        gap: 0.62rem;
+        grid-row: span 2;
+
+        .host-name {
+            color: $coral;
+            font-size: 1.125rem;
+            line-height: 142.6%;
+            text-align: right;
+            width: min-content;
+        }
+
+        .host-picture {
+            border-radius: 50%;
+            width: 4rem;
+        }
+    }
+
+    .housing-location {
+        color: $coral;
+        font-size: 1.125rem;
+        line-height: 142.6%;
+        grid-row: 2;
+    }
+
+    .housing-tags {
+        display: flex;
+        gap: 0.62rem;
+        margin-block: 1.25rem 1.5rem;
+        
+        .housing-tag {
+            color: $white;
+            background-color: $coral;
+            text-align: center;
+            font-size: 0.875rem;
+            padding: 0.19rem 1.38rem;
+            border-radius: 0.625rem;
+        }
+    }
+
+    .housing-ratings {
+        justify-self: end;
+    }
+
+}
+
+.housing-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.75rem;
+
 }

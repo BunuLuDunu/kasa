@@ -56,3 +56,30 @@
         padding: 1.25rem;
     }
 }
+
+/*Media queries*/
+@media screen and (max-width: 767px) {
+    .collapse {
+
+        // Ajout d'une marge sauf pour le dernier enfant
+        &:not(:last-child) {
+        margin-bottom: 1.25rem;
+        }
+
+        &-bar {
+            padding: 0.62rem;
+        }
+
+        &-title {
+            font-size: 0.8125rem;
+        }
+
+        &-arrow {
+            width: 1rem;
+        }
+
+        &-inner {
+            font-size: 0.75rem;
+        }
+    }
+}

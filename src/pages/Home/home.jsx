@@ -9,29 +9,15 @@ function Home() {
     const img = {src: HomeBanner, alt: "Vagues s'échouant sur des côtes rocheuses en bord de forêt"};
 
     // Fetch pour récupérer les datas sur les logements disponibles dans le fichier json
-    const [data, setData] = useState([]);
-    const getData = () => {
-        fetch('/housings.json'
-        ,{
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        }
-        )
-        .then(function(response){
-            console.log(response)
-            return response.json();
-        })
-        .then(function(myJson) {
-            console.log(myJson);
-
-            setData(myJson)
-        });
-    }
+    const [housing, setHousing] = useState([]);
 
     useEffect(() => {
-        getData()
+        const fetchHousings = async() => {
+            const response = await fetch('/housings.json');
+            const data = await response.json();
+            setHousing(data)
+            };
+            fetchHousings();
     }, [])
 
     return (
@@ -41,7 +27,7 @@ function Home() {
             <section className='housings'>
                 <ul className='housing-cards'>
                     {
-                        data && data.length>0 && data.map((housing)=>
+                        housing && housing.length>0 && housing.map((housing)=>
                         <li key={housing.id}>
                             <Card {...housing}/>
                         </li>)

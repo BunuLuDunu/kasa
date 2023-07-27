@@ -7,11 +7,11 @@ function Carousel({pictures}) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const prevImage = () => {
-        setActiveIndex(Math.max(0, activeIndex - 1));
+        setActiveIndex(activeIndex - 1 < 0 ? pictures.length - 1 : activeIndex - 1);
     };
 
     const nextImage = () => {
-        setActiveIndex(Math.min(pictures.length - 1, activeIndex + 1));
+        setActiveIndex(activeIndex + 1 > pictures.length - 1 ? 0 : activeIndex + 1);
     };
 
     return (

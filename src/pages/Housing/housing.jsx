@@ -6,7 +6,7 @@ import Carousel from "../../components/Carousel/carousel.jsx";
 import Collapse from "../../components/Collapse/collapse.jsx";
 
 function Housing() {
-    // Fetch pour récupérer les datas sur les logements disponibles dans le fichier json
+    // Fetch pour récupérer les datas sur les logements disponibles dans le fichier json et gestion de l'erreur sur l'id
     const { id } = useParams()
 
     const [housing, setHousing] = useState({});
@@ -35,6 +35,7 @@ function Housing() {
         <div>
             {housing && housing.title ? 
                 <div className="housing-container">
+                    {/* Importation du composant carrousel */}
                     <Carousel pictures={housing.pictures}/>
                     <div className="housing-info">
                         <h1 className="housing-title">{housing.title}</h1>
@@ -55,6 +56,7 @@ function Housing() {
                             })}
                         </div>
                     </div>
+                    {/* Importation du composant collapse */}
                     <div className="housing-details">
                         <Collapse title="Description" description={<p>{housing.description}</p>} />
                         <Collapse title="Équipements" description={<ul>{housing.equipments.map((equipment, index) => <li key={index}>{equipment}</li>)}</ul>} />

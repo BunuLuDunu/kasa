@@ -31,7 +31,8 @@
             text-decoration: none;
             white-space: nowrap;
             }
-
+        
+        // Classe ajoutée par défaut par <NavLink /> pour cibler le lien actif
         .active {
             text-decoration: underline;
             cursor: default;

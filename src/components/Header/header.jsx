@@ -6,10 +6,12 @@ function Header() {
     return (
         <header>
             <div className="header-wrapper">
+                {/* Lien de navigation intégré au Logo renvoyant vers la page d'accueil */}
                 <NavLink className="header-logo" to="/">
                     <img src={Logo} alt="Kasa logo"/>
                 </NavLink>
                 <nav>
+                    {/* Menu de navigation */}
                     <ul className="nav-menu">
                         <li><NavLink to="/" className="nav-link">Accueil</NavLink></li>
                         <li><NavLink to="/about" className="nav-link">A propos</NavLink></li>

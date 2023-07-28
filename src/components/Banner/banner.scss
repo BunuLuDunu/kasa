@@ -12,6 +12,7 @@
     width: 100%;
     aspect-ratio: 77.5/13.9;
 
+    // Filtre d'opacité sur l'image de la bannière
     &::after {
         content: "";
         position: absolute;

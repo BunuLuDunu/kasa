@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Card({title, cover, id}) {
     return (
         <article className='card'>
-            <img src={cover} alt=""></img>
+            <img src={cover} alt="" loading='lazy'></img>
             <h2>{title}</h2>
             <Link to={`housing/${id}`}>Voir plus</Link>
         </article>

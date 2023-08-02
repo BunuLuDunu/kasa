@@ -19,6 +19,7 @@
         opacity: 0;
         transition: opacity 500ms ;
 
+        // Opacité à 1 pour que l'image active du carrousel s'affiche
         &-active {
             opacity: 1;
         }
@@ -50,6 +51,7 @@
             height: 1.5rem;
         }
 
+        // Pas d'affichage du compteur en version mobile
         &-counter {
             display: none;
         }

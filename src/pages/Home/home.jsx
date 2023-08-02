@@ -22,10 +22,12 @@ function Home() {
 
     return (
         <main className='home-container'>
+            {/* Importation du composant bannière */}
             <Banner img={img} title="Chez vous, partout et ailleurs" />
 
             <section className='housings'>
                 <ul className='housing-cards'>
+                    {/* Importation du composant Card dans une liste */}
                     {
                         housing && housing.length>0 && housing.map((housing)=>
                         <li key={housing.id}>
